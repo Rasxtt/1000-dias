@@ -1,0 +1,192 @@
+#P2,#P3 {
+    display: none;
+}
+
+/* Mapa */
+#mapa {
+    width: 600px;
+    height: 400px;
+    position: relative;
+    background-image: url('laberinto.jpeg'); /* Ajusta la ruta según tu archivo */
+    background-size: cover; /* Ajusta la imagen al tamaño del div */
+    background-position: center; /* Centra la imagen */
+    border: 2px solid #000;
+  }
+
+  /* Personaje */
+  #personaje {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    background-image: url('capibara.png');
+    background-size: cover;
+    background-position: center;
+    border-radius: 0; /* Elimina el borde redondo si no quieres que recorte la imagen */
+  }
+
+  #mensaje {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.7); /* Fondo negro semitransparente */
+    padding: 30px 40px;
+    border-radius: 20px;
+    font-size: 32px;
+    font-weight: bold;
+    color: #fff; /* Texto blanco */
+    text-align: center;
+    z-index: 1000;
+    display: none;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+  }
+
+/* Estilos para centrar el contenido */
+body, html {
+    height: 100%; /* Asegura que el body ocupe toda la pantalla */
+    margin: 0;
+    display: flex;
+    justify-content: center; /* Centrado horizontal */
+    align-items: center; /* Centrado vertical */
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5; /* Color de fondo */
+}
+
+.contenedor {
+    text-align: center; /* Centra el texto */
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+    width: 90%;
+    max-width: 600px; /* Limita el ancho máximo */
+}
+
+h1 {
+    color: #ff6f61; /* Color del título */
+    font-size: 2.5em;
+}
+
+p {
+    color: #333;
+    font-size: 1.2em;
+    margin: 20px 0;
+}
+
+.personaje {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 50%; /* Si la imagen es redonda */
+}
+
+button {
+    background-color: #ff6f61;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #e05a50; /* Cambia el color cuando pasa el mouse */
+}
+
+#linea {
+    width: 500px;
+    height: 10px;
+    background-color: #ccc;
+    margin: 20px 0;
+    position: relative;
+    border-radius: 5px;
+  }
+  
+  .paso {
+    width: 10px;
+    height: 100%;
+    background-color: #ff6f61;
+    border-radius: 5px;
+    position: absolute;
+    top: 0;
+    left: 0; /* Comienza en la posición inicial */
+  }
+  
+  button {
+    background-color: #ff6f61;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2em;
+  }
+  
+  button:hover {
+    background-color: #e05a50;
+  }
+  
+  #informacion {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  #informacion img {
+    width: 200px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  #informacion h3 {
+    font-size: 1.5em;
+    color: #333;
+  }
+
+  #quiz-container {
+    text-align: center;
+  }
+  
+  .pregunta {
+    margin-bottom: 30px;
+  }
+  
+  button.opcion {
+    background-color: #ff6f61;
+    color: white;
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2em;
+  }
+  
+  button.opcion:hover {
+    background-color: #e05a50;
+  }
+  
+  button#verResultados {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 1.5em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button#verResultados:hover {
+    background-color: #45a049;
+  }
+  
+  p {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+
+  

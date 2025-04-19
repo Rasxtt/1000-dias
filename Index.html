@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1000 Dias</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <div id="P1">
+        <h1>Felices 1000 días</h1>
+        <button id="continuar">Continuar</button>
+    </div>
+    <div id="P2">
+        <h1>Elige una opción</h1>
+        <button id="B1">Busqueda de huevos</button>
+        <button id="B2">Linea de tiempo</button>
+        <button id="B3">Quiz</button>
+
+    </div>
+    <div id="P3">
+        <div id="D1">
+            <h2>Laberinto</h2>
+            <div id="mapa">
+                <div id="personaje"></div>
+                <div id="mensaje"></div>
+              </div>
+        </div>
+        <div id="D2">
+            <h2>Línea de tiempo</h2>
+            <div id="linea">
+                <div id="paso" class="paso"></div>
+            </div>
+            <button id="avanzar">Avanzar</button>
+            <div id="informacion">
+                <img id="imagen" src="tedy.jpeg" alt="Tedy" />
+                <h3 id="titulo"></h3>
+            </div>
+        </div>
+        
+        <div id="D3">
+            <div id="quiz-container">
+                <h2>Quiz: Bonito</h2>
+              
+                <div id="pregunta1" class="pregunta">
+                  <h3 id="titulo-pregunta1">¿De que colo era mi camisa el primer dia que hablamos</h3>
+                  <button class="opcion" onclick="verificarRespuesta(1, 'a')">Morada</button>
+                  <button class="opcion" onclick="verificarRespuesta(1, 'b')">Roja</button>
+                  <button class="opcion" onclick="verificarRespuesta(1, 'c')">Negra</button>
+                  <button class="opcion" onclick="verificarRespuesta(1, 'd')">Rosada🎀</button>
+                  <p id="resultado1"></p>
+                </div>
+              
+                <div id="pregunta2" class="pregunta">
+                  <h3 id="titulo-pregunta2">¿Cual fue el primer regalo que te di?</h3>
+                  <button class="opcion" onclick="verificarRespuesta(2, 'a')">Chocolates 🍫</button>
+                  <button class="opcion" onclick="verificarRespuesta(2, 'b')">Una pupu💩</button>
+                  <button class="opcion" onclick="verificarRespuesta(2, 'c')">Un tedy🧸</button>
+                  <button class="opcion" onclick="verificarRespuesta(2, 'd')">Una carta💌</button>
+                  <p id="resultado2"></p>
+                </div>
+              
+                <div id="pregunta3" class="pregunta">
+                  <h3 id="titulo-pregunta3">¿Que dia nos conocimos?</h3>
+                  <button class="opcion" onclick="verificarRespuesta(3, 'a')">18 de julio</button>
+                  <button class="opcion" onclick="verificarRespuesta(3, 'b')">6 de Julio</button>
+                  <button class="opcion" onclick="verificarRespuesta(3, 'c')">9 de Julio</button>
+                  <button class="opcion" onclick="verificarRespuesta(3, 'd')">4 de Julio</button>
+                  <p id="resultado3"></p>
+                </div>
+              
+                <div id="pregunta4" class="pregunta">
+                  <h3 id="titulo-pregunta4">¿Que es lo que mas me gusta de ti?</h3>
+                  <button class="opcion" onclick="verificarRespuesta(4, 'a')">Tu cerebro</button>
+                  <button class="opcion" onclick="verificarRespuesta(4, 'b')">Ninguna de las anteriores</button>
+                  <button class="opcion" onclick="verificarRespuesta(4, 'c')">Tu personalidad</button>
+                  <button class="opcion" onclick="verificarRespuesta(4, 'd')">Tu BOOB</button>
+                  <p id="resultado4"></p>
+                </div>
+              </div>
+
+        </div>
+        <button id="regresar">Volver</button>
+    </div>
+    
+
+    <script src="Script.js"></script>
+</body>
+</html>
